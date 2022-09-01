@@ -1,0 +1,69 @@
+:root {
+  --navheight: 50px;
+  --mobilewidth: 500px;
+  --desktopwidth: 1000px;
+  --grey: #54535a;
+  --light: #ffffff;
+  --dark: #404040;
+  --dark-blue: #20207f;
+  --pop-green: #30b54f;
+  --maroon: #362a2e;
+  --accent-maroon: #d86a6f;
+  --light-maroon: #a6838d;
+  --brown: #302729;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--dark);
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+p {
+  font-size: 14px;
+  line-height: 1.68;
+}
+
+p.notes {
+  font-size: 12px;
+}
+
+.cursive {
+  font-family: 'Dancing Script', cursive;
+}
+
+img {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  pointer-events: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
