@@ -29,12 +29,12 @@ const Description = styled.p`
 function About() {
   return (
     <Wrapper>
-      <Subtitle className="cursive">Catering services in New York</Subtitle>
-      <Title>We specialize in corporate and private events</Title>
+      <Subtitle className="cursive">café in Hackney, London</Subtitle>
+      <Title>We specialize in Indian food</Title>
       <Description className="notes">
-        With 20 years of experience, we promise you the freshest, local
-        ingredients, hand-crafted cooking sprinkled with our unique whimsical
-        elegance and exceptional service.
+        With 20 years of experience, we promise you the freshest,hand-crafted
+        cooking sprinkled with our unique whimsical elegance and exceptional
+        service.
       </Description>
     </Wrapper>
   )
