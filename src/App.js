@@ -4,6 +4,9 @@ import Banner from './components/Banner'
 import Navbar from './components/Navbar'
 import Portfolio from './components/Portfolio'
 import Sidebar from './components/Sidebar'
+import ItemList from './components/ItemList'
+
+import { ChakraProvider } from '@chakra-ui/react'
 
 const Wrapper = styled.div`
   margin-top: var(--navheight);
@@ -12,13 +15,16 @@ const Wrapper = styled.div`
 
 function App() {
   return (
-    <Wrapper>
-      <Navbar />
-      <Banner />
-      <About />
-      <Portfolio />
-      <Sidebar />
-    </Wrapper>
+    <ChakraProvider>
+      <Wrapper>
+        <Navbar />
+        <Banner />
+        <About />
+        <Portfolio />
+        <ItemList />
+        <Sidebar />
+      </Wrapper>
+    </ChakraProvider>
   )
 }
 

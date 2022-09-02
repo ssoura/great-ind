@@ -24,6 +24,7 @@ const Heading = styled.h3`
 const P = styled.p`
   color: var(--light-maroon);
   margin-top: 15px;
+  font-size: 1.2rem;
 `
 
 const ButtonList = styled.div`
@@ -43,26 +44,15 @@ const Button = styled.button`
 function ServiceSection() {
   return (
     <ServiceWrapper>
-      <Heading>Services</Heading>
+      <Heading>Our Chef</Heading>
       <P>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati
-        exercitationem, eveniet, hic praesentium vero unde aspernatur quos,
-        accusantium error expedita fugit velit.
-      </P>
-      <P className="notes">
-        Quia voluptate voluptatum placeat nisi veritatis dolores, eligendi
-        libero asperiores ipsum sed commodi laborum ad quibusdam nulla nobis
-        autem saepe cupiditate iusto architecto molestias aspernatur, sint ipsam
-        praesentium?
-      </P>
-      <P className="notes">
-        Quia voluptate voluptatum placeat nisi veritatis dolores, eligendi
-        libero asperiores ipsum sed commodi laborum ad quibusdam nulla nobis
-        autem saepe cupiditate iusto architecto molestias aspernatur, sint ipsam
-        praesentium?
+        Our head Chef Pratap Singh Rawat, has been cooking in hotels and
+        restaurants around the globe for the last 40 years. Having worked in
+        California, Japan, Melbourne, Dubai, Italy and London, he has sharpened
+        his skills and we are fortunate to have him leading our kitchen. Chef
+        Pratap is cooking some of the finest Indian dishes you'll taste.
       </P>
       <ButtonList>
-        <Button>Download CV</Button>
         <Button>Check My Portfolio</Button>
       </ButtonList>
     </ServiceWrapper>

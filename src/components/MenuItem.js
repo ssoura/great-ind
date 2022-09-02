@@ -11,13 +11,8 @@ const MenuItemWrapper = styled.div`
   cursor: pointer;
 `
 
-function MenuItem({ menu }) {
-  return (
-    <MenuItemWrapper>
-      {menu.label}
-      <FaChevronDown style={{ height: '8px', marginTop: '3px' }} />
-    </MenuItemWrapper>
-  )
+function MenuItems({ menu }) {
+  return <MenuItemWrapper>{menu.label}</MenuItemWrapper>
 }
 
-export default MenuItem
+export default MenuItems

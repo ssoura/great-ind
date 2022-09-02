@@ -7,7 +7,7 @@ import TitleSection from './Portfolio/TitleSection'
 
 const Wrapper = styled.div`
   background-color: var(--brown);
-  height: 600px;
+  height: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,7 +22,7 @@ function Portfolio() {
   return (
     <Wrapper>
       <TitleSection />
-      <MenuSection />
+      {/* <MenuSection /> */}
       <ServiceSection />
     </Wrapper>
   )

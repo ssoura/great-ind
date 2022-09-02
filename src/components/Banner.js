@@ -64,14 +64,14 @@ function Banner() {
   return (
     <Wrapper>
       <Img src={Kitchen} alt="kitchen top" />
-      <Subtitle className="cursive">Catering should be an experience</Subtitle>
+      <Subtitle className="cursive">Great indian Food</Subtitle>
       <Title>We use only the finest and freshest ingredients</Title>
       <Description>
-        At Sway catering we know that food is an important part of life. <br />
+        We know that food is an important part of life. <br />
         If the meal is not perfect, your event cannot be perfect.
       </Description>
       <Button>
-        Request a Quote <FaChevronRight style={{ width: '5px' }} />
+        Menu <FaChevronRight style={{ width: '5px' }} />
       </Button>
       <Wave />
     </Wrapper>

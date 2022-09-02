@@ -1,11 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
-import { BiCube } from 'react-icons/bi'
-import { FiFeather, FiCommand, FiThumbsUp } from 'react-icons/fi'
+import { MdDeliveryDining, MdFastfood } from 'react-icons/md'
+import { GiPartyPopper } from 'react-icons/gi'
 
 const MenuWrapper = styled.div`
+  background-color: #f9f9f9;
   padding: 20px;
-  max-width: 500px;
+  max-width: 100%;
   flex: 2;
   display: flex;
   justify-content: center;
@@ -25,9 +26,9 @@ const MenuList = styled.div`
 `
 
 const MenuItemWrapper = styled.div`
-  background-color: var(--maroon);
+  background-color: #eee0e5;
   width: 100%;
-  max-width: 300px;
+  max-width: 400px;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -64,7 +65,7 @@ function MenuItem({ title, description, children }) {
   )
 }
 
-function MenuSection() {
+function ItemList() {
   return (
     <MenuWrapper>
       <MenuList>
@@ -72,29 +73,23 @@ function MenuSection() {
           title="Fresh Food"
           description="Here at GIF we take pride in ordering the freshest ingredients, to ensure that the flavours of each ingredient are brought out in every dish"
         >
-          <BiCube />
+          <MdFastfood />
         </MenuItem>
         <MenuItem
           title="Home Delivery"
           description="Order via one of our partner apps to enjoy our food in the comfort of your own home."
         >
-          <FiCommand />
+          <MdDeliveryDining />
         </MenuItem>
         <MenuItem
           title="Event & Party"
           description="Why not let us handle the catering for your next event, whether it be a birthday party, a corporate event or a wedding, get in touch with us to discuss how we can help."
         >
-          <FiFeather />
-        </MenuItem>
-        <MenuItem
-          title="Promote"
-          description="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit, quidem!"
-        >
-          <FiThumbsUp />
+          <GiPartyPopper />
         </MenuItem>
       </MenuList>
     </MenuWrapper>
   )
 }
 
-export default MenuSection
+export default ItemList

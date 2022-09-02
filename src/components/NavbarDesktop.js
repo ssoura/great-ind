@@ -1,18 +1,25 @@
 import React from 'react'
 import styled from 'styled-components'
-import { FaChevronDown } from 'react-icons/fa'
-import { AiOutlineShoppingCart } from 'react-icons/ai'
-import { FiSearch } from 'react-icons/fi'
+
+import Logo from '../assets/img/logo3.png'
+
+import { Image } from '@chakra-ui/react'
 
 const MENU = [
   {
-    label: 'Demos',
+    label: 'Home',
   },
   {
-    label: 'Pages',
+    label: 'Reviews',
   },
   {
-    label: 'Portfolio',
+    label: 'Our Menu',
+  },
+  {
+    label: 'Contact Us',
+  },
+  {
+    label: 'About Us',
   },
 ]
 
@@ -48,14 +55,25 @@ const MenuItemWrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 2px;
+  gap: 8px;
   cursor: pointer;
-  font-size: 12px;
+  font-size: 1rem;
 `
+const LeftWrapper = styled.div`
+  position: absolute;
+  left: 40px;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  gap: 15px;
 
+  & > * {
+    cursor: pointer;
+  }
+`
 const RightWrapper = styled.div`
   position: absolute;
-  right: 20px;
+  right: 40px;
   display: flex;
   height: 100%;
   align-items: center;
@@ -74,28 +92,23 @@ const Search = styled.input`
 `
 
 function MenuItem({ menu }) {
-  return (
-    <MenuItemWrapper>
-      {menu.label}
-      <FaChevronDown style={{ height: '8px', marginTop: '3px' }} />
-    </MenuItemWrapper>
-  )
+  return <MenuItemWrapper>{menu.label}</MenuItemWrapper>
 }
 
 function NavbarDesktop() {
   return (
     <Wrapper>
       <Content>
+        <LeftWrapper>
+          <Image height="50px" objectFit="cover" src={Logo} alt="logo" />
+        </LeftWrapper>
+
         <Menu>
           {MENU.map((menu) => (
             <MenuItem key={menu.label} menu={menu} />
           ))}
         </Menu>
-        <RightWrapper>
-          <AiOutlineShoppingCart style={{ color: 'var(--grey)' }} />
-          <FiSearch style={{ color: 'var(--grey)' }} />
-          <Search />
-        </RightWrapper>
+        <RightWrapper></RightWrapper>
       </Content>
     </Wrapper>
   )

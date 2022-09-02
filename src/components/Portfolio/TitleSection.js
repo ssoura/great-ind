@@ -1,9 +1,12 @@
 import styled from 'styled-components'
+import { Image, Box } from '@chakra-ui/react'
+
+import chef from '../../assets/img/chef-scaled.jpeg'
 
 const TitleSectionWrapper = styled.div`
   flex: 1;
   background-color: var(--dark);
-  min-width: 200px;
+  min-width: 300px;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -27,7 +30,9 @@ const Title = styled.h1`
 function TitleSection() {
   return (
     <TitleSectionWrapper>
-      <Title>My Portfolio</Title>
+      <Box>
+        <Image width="100%" src={chef} alt="Dan Abramov" />
+      </Box>
     </TitleSectionWrapper>
   )
 }
